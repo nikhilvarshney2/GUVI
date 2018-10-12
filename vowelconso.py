@@ -11,4 +11,4 @@ if(len(a)==1):
     else:
         print("invalid")
 else:
-    print("invalid Input")
+    print("Invalid Input")
