@@ -1,5 +1,5 @@
 s = list(input().split())
-for i in range(1,len(s)-1):
-    if s[i] == "and":
-        s[i-1],s[i+1] = s[i+1],s[i-1]
+for u in range(1,len(s)-1):
+    if s[u] == "and":
+        s[u-1],s[u+1] = s[u+1],s[u-1]
 print(*s)

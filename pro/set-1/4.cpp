@@ -8,18 +8,18 @@ int main(){
 
     string min_string = min(n1, n2);
     string max_string = max(n1, n2);
-    int i=0, cost=0;
+    int i=0, c=0;
 
     for(i=0; i<min_string.length(); i++){
         if(n1[i] == n2[i])
             continue;
-        cost += abs(n1[i] - n2[i]);
+        c += abs(n1[i] - n2[i]);
     }
 
     while(i<max_string.length()){
-        cost += max_string[i] - 96;
+        c += max_string[i] - 96;
         i++;
     }
-    cout<<cost;
+    cout<<c;
     return 0;
 }

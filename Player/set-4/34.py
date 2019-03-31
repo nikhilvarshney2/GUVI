@@ -1,2 +1,2 @@
 n = input()
-print("".join([n[i] for i in range(0,len(n),3)]))
+print("".join([n[u] for u in range(0,len(n),3)]))

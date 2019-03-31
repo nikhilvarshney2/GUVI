@@ -1,12 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int findGCD(int a, int b){
+int findgcd(int a, int b){
     if (b==0)
         return a;
     if (a < b)
-        return findGCD(a, b%a);
-    return findGCD(b, a%b);
+        return findgcd(a, b%a);
+    return findgcd(b, a%b);
 }
 
 struct node{
@@ -26,22 +26,22 @@ public:
 		for (int i=0; i<vec.size(); i++)
 			tree[n+i] = vec[i];
 		for (int i=n-1; i>0; --i)
-			tree[i] = findGCD(tree[i<<1] , tree[i<<1 | 1]);
+			tree[i] = findgcd(tree[i<<1] , tree[i<<1 | 1]);
 	}
 	void updateTreeNode(int p, int value) {
 		tree[p+n] = value;
 		p = p+n;
 		for (int i=p; i>1; i>>=1)
-			tree[i>>1] = findGCD(tree[i], tree[i^1]);
+			tree[i>>1] = findgcd(tree[i], tree[i^1]);
 	}
 	int gcd(int l, int r){
 		int res = tree[r+n];
 		for(l+=n, r+=n; l<r; l>>=1, r>>=1) {
 			if(l&1)
-				res = findGCD(res,tree[l++]);
+				res = findgcd(res,tree[l++]);
 
 			if(r&1)
-				res = findGCD(res,tree[--r]);
+				res = findgcd(res,tree[--r]);
 		}
 		return res;
 	}

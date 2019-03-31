@@ -2,12 +2,12 @@ import re
 n = int(input())
 l = list(input().split())
 
-for x in l:
-    if x == "1" or x == "4" or x == "78":
+for z in l:
+    if z == "1" or z == "4" or z == "78":
         print("+")
-    elif "5" == x[-1] and x[-2] == "3":
+    elif "5" == z[-1] and z[-2] == "3":
         print("-")
-    elif x[0] == "1" and x[1] == "9" and x[2] == "0":
+    elif z[0] == "1" and z[1] == "9" and z[2] == "0":
         print("?")
     else:
         print("*")

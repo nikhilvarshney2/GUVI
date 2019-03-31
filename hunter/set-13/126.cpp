@@ -5,11 +5,11 @@
 using namespace std;
 
 int main(){
-    string str;
+    string z;
     bool flag=false;
-    getline(cin,str);
-    for(int i=0; i<str.length(); i++){
-        if(isupper(str[i]) && (i==0 || str[i-1]==' ')){
+    getline(cin,z);
+    for(int i=0; i<z.length(); i++){
+        if(isupper(z[i]) && (i==0 || z[i-1]==' ')){
             flag=true;
         }
     }

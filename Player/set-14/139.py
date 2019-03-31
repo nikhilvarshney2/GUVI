@@ -1,5 +1,5 @@
-def count1(n):
-    if n==0:
+def count1(u):
+    if u==0:
         return 0
-    return n%2 + count1(n//2)
+    return u%2 + count1(u//2)
 print(count1(int(input())))

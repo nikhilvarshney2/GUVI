@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-set<string> set1;
+set<string> set11;
 
 void swap(string &s,int a,int b){
     char temp=s[a];
@@ -11,7 +11,7 @@ void swap(string &s,int a,int b){
 
 void permute(string &s,int l,int r){
     if(l==r){
-        set1.insert(s);
+        set11.insert(s);
         return;
     }
     for(int i=l;i<=r;i++){
@@ -24,7 +24,7 @@ void permute(string &s,int l,int r){
 int main(){
     string s;  cin>>s;
     permute(s,0,s.length()-1);
-    for(auto i : set1){
+    for(auto i : set11){
         cout<<i<<endl;
     }
 }

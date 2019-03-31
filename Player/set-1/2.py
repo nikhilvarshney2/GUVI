@@ -1,6 +1,6 @@
-def fac(n):
-    if n==1 or n==1:
+def fac(z):
+    if z==1 or z==1:
         return 1
-    return n*fac(n-1)
+    return z*fac(z-1)
 
 print(fac(int(input())))

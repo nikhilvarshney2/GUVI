@@ -1,2 +1,2 @@
-n = int(input())
+u = int(input())
 print(*set(list(map(int,input().split()))))

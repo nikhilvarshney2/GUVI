@@ -10,9 +10,9 @@ int main(){
         cin>>vec[i];
 
     sort(vec.begin(), vec.end(), [](int a, int b){
-        bitset<16> b1(a), b2(b);
-        if(b1.count()!=b2.count())
-            return b1.count()>b2.count();
+        bitset<16> b11(a), b2(b);
+        if(b11.count()!=b2.count())
+            return b11.count()>b2.count();
         else
             return a>b;
     });

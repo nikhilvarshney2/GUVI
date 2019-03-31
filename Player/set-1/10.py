@@ -1,9 +1,9 @@
 def diffOne(s1,s2):
-    diff = 2
+    z = 2
     for i in range(len(s1)):
-        if s1[i]!=s2[i] and diff:
-            diff-=1
-        if not diff:
+        if s1[i]!=s2[i] and z:
+            z-=1
+        if not z:
             return "no"
     return "yes"
 

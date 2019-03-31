@@ -1,7 +1,7 @@
 n,k = input().split()
-count = 0
+u = 0
 for i in n:
     if i==k:
-        count+=1
+        u+=1
 
-print(count)
+print(u)

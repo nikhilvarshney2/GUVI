@@ -3,9 +3,9 @@ l = list(map(int,input().split()))
 import sys
 min = sys.maxsize
 max = 0
-for i in l:
-    if max<i:
-        max = i
-    if min > i:
-        min = i
+for u in l:
+    if max<u:
+        max = u
+    if min > u:
+        min = u
 print(max-min)

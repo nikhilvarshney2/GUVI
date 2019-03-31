@@ -2,9 +2,9 @@
 using namespace std;
 
 int main(){
-    int n;
-    cin>>n;
-    if(!(n&(n-1)))
+    int z;
+    cin>>z;
+    if(!(z&(z-1)))
         cout<<"YES";
     else
         cout<<"NO";

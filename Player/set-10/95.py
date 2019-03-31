@@ -1,8 +1,8 @@
-n,k,p = map(int,input().split())
+u,k,p = map(int,input().split())
 l = []
-while n>0:
-    x = n%10
-    n = n//10
+while u>0:
+    x = u%10
+    u = u//10
     l.append(x)
 
 print(l[-(k+p)])

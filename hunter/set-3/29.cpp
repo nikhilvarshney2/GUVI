@@ -2,13 +2,13 @@
 using namespace std;
 
 int main(){
-    long int n, sum=0, temp; // empty sub array
+    long int n, summtion=0, temp; // empty sub array
     cin>>n;
     for(int i=0; i<n; i++){
         cin>>temp;
         if(temp>0)
-            sum += temp;
+            summtion += temp;
     }
-    cout<<sum;
+    cout<<summtion;
     return 0;
 }

@@ -5,11 +5,11 @@ even = 0
 odd = 1
 evencount = 0
 
-for i in l:
-    if i%2:
-        odd = i
+for u in l:
+    if u%2:
+        odd = u
     else:
-        even = i
+        even = u
         evencount += 1
 if evencount == 1:
     print(even)

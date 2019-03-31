@@ -1,6 +1,6 @@
-n,k = map(int,input().split())
+n,u = map(int,input().split())
 kl = list(map(int,input().split()))
-if k in kl:
+if u in kl:
     print("yes")
 else:
     print("no")

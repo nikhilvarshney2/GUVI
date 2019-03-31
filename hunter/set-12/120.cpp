@@ -7,7 +7,7 @@ using namespace std;
 
 int main(){
     int n;
-    long int count=0;
+    long int z=0;
     cin>>n;
     vector<int> arr(n);
     for(int i=0; i<n; i++){
@@ -17,11 +17,11 @@ int main(){
         for(int j=1; j<k; j++){
             for(int i=0; i<j; i++){
                 if(arr[k] == arr[j]+arr[i] ){
-                    count++;
+                    z++;
                 }
             }
         }
     }
-    cout<<count<<endl;
+    cout<<z<<endl;
     return 0;
 }

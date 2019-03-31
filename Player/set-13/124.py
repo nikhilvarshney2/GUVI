@@ -10,6 +10,6 @@ def LCM(a,b):
 n = int(input())
 l = list(map(int,input().split()))
 lcm = 1
-for i in l:
-    lcm = LCM(lcm,i)
+for u in l:
+    lcm = LCM(lcm,u)
 print(lcm)

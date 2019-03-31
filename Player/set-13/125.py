@@ -8,6 +8,6 @@ def GCD(a,b):
 n = int(input())
 l = list(map(int,input().split()))
 gcd = 1
-for i in l:
-    gcd = GCD(gcd,i)
+for u in l:
+    gcd = GCD(gcd,u)
 print(gcd)

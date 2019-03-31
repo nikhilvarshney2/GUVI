@@ -1,2 +1,2 @@
-n,k = map(int,input().split())
-print(n>>k)
+u,k = map(int,input().split())
+print(u>>k)

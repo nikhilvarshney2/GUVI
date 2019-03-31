@@ -1,10 +1,10 @@
-def gcd(n,m):
+def gcd(z,m):
     if m == 0:
-        return n
-    return gcd(m, n%m)
+        return z
+    return gcd(m, z%m)
 
-n,m = map(int,input().split())
-if gcd(n,m)==1:
+z,m = map(int,input().split())
+if gcd(z,m)==1:
     print("yes")
 else:
     print("no")

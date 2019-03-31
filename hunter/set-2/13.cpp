@@ -2,16 +2,16 @@
 using namespace std;
 
 int main(){
-    string str;
-    getline(cin, str);
+    string stri;
+    getline(cin, stri);
     stack<char> s;
-    int _size = str.size()/2;
+    int _size = stri.size()/2;
     for(int i=0; i<_size; i++)
-        s.push(str[i]);
-    for(int i=str.size() - _size; i<str.size(); i++){
+        s.push(stri[i]);
+    for(int i=stri.size() - _size; i<stri.size(); i++){
         char c=s.top();
         s.pop();
-        if(c!=str[i])
+        if(c!=stri[i])
             break;
     }
     if(s.empty())

@@ -1,7 +1,7 @@
 import math
-def isPrime(n):
-    for i in range(2,int(math.sqrt(n))+1):
-        if not n%i:
+def isPrime(z):
+    for i in range(2,int(math.sqrt(z))+1):
+        if not z%i:
             return False
     return True
 

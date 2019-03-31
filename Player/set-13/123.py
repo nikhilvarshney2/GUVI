@@ -1,9 +1,9 @@
 import math as m
 def isprime(n):
-    for i in range(2, int(m.sqrt(n)+1)):
-        if not n%i:
+    for u in range(2, int(m.sqrt(n)+1)):
+        if not n%u:
             return False
     return True
-for i in range(2,int(input())):
-    if isprime(i):
-        print(i,end=' ')
+for u in range(2,int(input())):
+    if isprime(u):
+        print(u,end=' ')

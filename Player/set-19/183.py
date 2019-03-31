@@ -1,7 +1,7 @@
 n = int(input())
 l = list(map(int,input().split()))
-count=0
+u=0
 for i in range(n):
     if i+1 != l[i]:
-        count+=1
-print(count)
+        u+=1
+print(u)

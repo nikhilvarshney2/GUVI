@@ -1,6 +1,6 @@
 s = input()
 l = [False]*(26)
-for i in s:
-    if l[ord(i)-97]==False:
-        l[ord(i)-97]=True
-        print(i,end="")
+for u in s:
+    if l[ord(u)-97]==False:
+        l[ord(u)-97]=True
+        print(u,end="")

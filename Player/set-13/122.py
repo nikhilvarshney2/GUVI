@@ -1,5 +1,5 @@
 d,m,y = input().split('-')
-switcher = {
+u = {
     '01' : 'January',
     '02' : 'February',
     '03' : 'March',
@@ -13,4 +13,4 @@ switcher = {
     '11' : 'November',
     '12' : 'December'
     }
-print(switcher[m])
+print(u[m])

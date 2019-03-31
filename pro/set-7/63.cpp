@@ -2,7 +2,7 @@
 using namespace std;
 
 int findNRCS(string input) {
-	int i, current_start = 0, current_length, max_length = 0;
+	int i, current_start = 0, current_length, length = 0;
 	int start;
 	map<char, int> m;
 	m[input[0]] = 0;
@@ -13,8 +13,8 @@ int findNRCS(string input) {
 		else {
 			if (m[input[i]] >= current_start) {
               	current_length = i - current_start;
-				if (max_length < current_length) {
-					max_length = current_length;
+				if (length < current_length) {
+					length = current_length;
 					start = current_start;
 				}
               	current_start = m[input[i]] + 1;
@@ -23,11 +23,11 @@ int findNRCS(string input) {
 		}
 	}
 
-	if (max_length < i - current_start) {
-		max_length = i - current_start;
+	if (length < i - current_start) {
+		length = i - current_start;
 		start = current_start;
 	}
-	return (max_length - start);
+	return (length - start);
 }
 
 int main() {

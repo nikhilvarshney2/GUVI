@@ -1,9 +1,9 @@
 from collections import Counter
-n = input()
-c = Counter(n)
+u = input()
+c = Counter(u)
 l = list(filter(lambda x: c[x]>1, c.keys()))
 n2 = ''
-for i in n:
+for i in u:
     if i in l:
         n2+=i.upper()
     else:

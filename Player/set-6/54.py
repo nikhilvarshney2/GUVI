@@ -1,5 +1,5 @@
-s1,s2 = input().split()
-if s1==s2:
+s1,u = input().split()
+if s1==u:
     print("yes")
 else:
     print("no")

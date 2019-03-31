@@ -1,4 +1,4 @@
 s = input()
     
-for i in range(0,len(s),2):
-    print(s[i]*int(s[i+1]),end="")
+for u in range(0,len(s),2):
+    print(s[u]*int(s[u+1]),end="")

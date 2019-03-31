@@ -3,14 +3,14 @@
 
 using namespace std;
 
-int longestPalindrome(int center, int i, string str){
-    if(center-i==-1 || center+i==str.length() || str[center-i]!=str[center+i]){
+int longestPalindrome(int center, int z, string str){
+    if(center-z==-1 || center+z==str.length() || str[center-z]!=str[center+z]){
         return 0;
     }
-    if(str[center-i]=='|'){
-        return longestPalindrome(center, i+1, str);
+    if(str[center-z]=='|'){
+        return longestPalindrome(center, z+1, str);
     }
-    return 1+longestPalindrome(center, i+1, str);
+    return 1+longestPalindrome(center, z+1, str);
 }
 
 void printPalindromes(string str){
@@ -20,15 +20,15 @@ void printPalindromes(string str){
 
     set<string> s;
     s.insert("");
-    for(int i=0; i<str.length()-1; i++){
-        new_string.push_back(str[i]);
+    for(int z=0; z<str.length()-1; z++){
+        new_string.push_back(str[z]);
         new_string.push_back('|');
     }
     new_string.push_back(str[str.length()-1]);
-    for(int i=0; i<new_string.length(); i++){
-        length = longestPalindrome(i, 1, new_string);
+    for(int z=0; z<new_string.length(); z++){
+        length = longestPalindrome(z, 1, new_string);
         if(1<length){
-            int start = i - length*2, finish = i + length*2 + 1;
+            int start = z - length*2, finish = z + length*2 + 1;
             while(start < finish){
                 output = "";
                 for(int k=start; k<finish; k++){
@@ -52,8 +52,8 @@ void printPalindromes(string str){
             return s1 < s2;
         return s1.length()<s2.length();
     });
-    for(int i=0; i<out.size(); i++){
-        cout<<out[i]<<endl;
+    for(int z=0; z<out.size(); z++){
+        cout<<out[z]<<endl;
     }
 }
 

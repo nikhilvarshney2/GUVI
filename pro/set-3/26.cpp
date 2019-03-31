@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int n, max_count=0;
+    int n, maxs=0;
     cin>>n;
     int arr[n];
     for(int i=0; i<n; i++){
@@ -16,8 +16,8 @@ int main(){
                 count++;
             }
         }
-        max_count = max(max_count, count);
+        maxs = max(maxs, count);
     }
-    cout<<max_count<<endl;
+    cout<<maxs<<endl;
     return 0;
 }

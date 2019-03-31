@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-int knapSack(int W, int n, int w[], int val[]) {
+int knap(int W, int n, int w[], int val[]) {
     int k[n+1][W+1] = {0};
     for(int i=0; i<=n; i++){
         for(int j=0; j<=W; j++){
@@ -27,6 +27,6 @@ int main(){
         cin>>wt[i];
     for(int i=0; i<n; i++)
         cin>>val[i];
-	cout<<knapSack(w, n, wt, val);
+	cout<<knap(w, n, wt, val);
 	return 0;
 }

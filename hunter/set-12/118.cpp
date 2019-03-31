@@ -5,10 +5,10 @@ using namespace std;
 int main(){
     string input;
     cin>>input;
-    int sum = 0;
+    int z = 0;
     for( int i=0; i<input.size(); i++){
-        sum += (int)input[i];
+        z += (int)input[i];
     }
-    cout<<sum;
+    cout<<z;
     return 0;
 }

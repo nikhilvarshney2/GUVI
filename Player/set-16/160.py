@@ -6,6 +6,6 @@ def minPow2Remainder(x):
     return x%2 + minPow2Remainder(x//2)
     
     
-a,b = map(int,input().split())
-mult = a|b
+u,b = map(int,input().split())
+mult = u|b
 print(minPow2Remainder(mult))

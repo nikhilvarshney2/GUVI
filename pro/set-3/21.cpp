@@ -2,16 +2,16 @@
 using namespace std;
 
 string equalAveragePartition(vector<int> arr){
-	int sum = 0;
+	int sums = 0;
 	int n = arr.size();
 	for(int i = 0; i < n; i++)
-		sum += arr[i];
+		sums += arr[i];
 
-	int lsum = 0;
+	int lsums = 0;
 	for(int i = 0; i < n-1; i++){
-		lsum += arr[i];
-		int rsum = sum - lsum;
-     	if (lsum * (n - i - 1) == rsum * (i + 1)) {
+		lsums += arr[i];
+		int rsums = sums - lsums;
+     	if (lsums * (n - i - 1) == rsums * (i + 1)) {
 			return "yes";
 		}
 	}

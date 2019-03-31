@@ -7,13 +7,13 @@ using namespace std;
 map<int,int> m;
 
 int main(){
-    int n, temp, sum=0;
+    int n, z, sum=0;
     cin>>n;
     for(int i=0; i<n; i++){
         for(int j=0; j<n; j++){
-            cin>>temp;
+            cin>>z;
             if(i==j){
-                sum+=temp;
+                sum+=z;
             }
         }
     }

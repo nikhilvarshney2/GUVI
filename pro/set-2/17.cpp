@@ -10,15 +10,15 @@ int main(){
         cin>>vec[i];
     }
     sort(vec.begin(), vec.end());
-    bool flag = true;
+    bool flags = true;
     for(int i=0; i<n-1; i++){
         if(find(vec.begin()+i, vec.end(), k-vec[i]) != vec.end()){
-            flag = false;
+            flags = false;
             cout<<"yes";
             break;
         }
     }
-    if(flag)
+    if(flags)
         cout<<"no";
     return 0;
 }

@@ -1,7 +1,7 @@
-n,k = map(int,input().split())
-if n%2 == 0:
-    n+=1
+u,k = map(int,input().split())
+if u%2 == 0:
+    u+=1
 s = 0
-for i in range(n,k,2):
+for i in range(u,k,2):
     s+=i
 print(s)

@@ -2,12 +2,12 @@
 using namespace std;
 
 int main(){
-    string path;
-    cin>>path;
+    string paths;
+    cin>>paths;
     char direction = 'x';
     int x = 0, y = 0;
-    for(int i=0; i<path.length(); i++){
-        if(path[i] == 'G'){
+    for(int i=0; i<paths.length(); i++){
+        if(paths[i] == 'G'){
             if(direction == 'x')
                 x++;
             else if(direction == 'X')
@@ -16,7 +16,7 @@ int main(){
                 y++;
             else if(direction == 'Y')
                 y--;
-        }else if(path[i]=='L'){
+        }else if(paths[i]=='L'){
             if(direction == 'x')
                 direction = 'y';
             else if(direction == 'X')
@@ -25,7 +25,7 @@ int main(){
                 direction = 'X';
             else if(direction == 'Y')
                 direction = 'x';
-        } else if(path[i]=='R'){
+        } else if(paths[i]=='R'){
             if(direction == 'x')
                 direction = 'Y';
             else if(direction == 'X')

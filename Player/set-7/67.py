@@ -1,6 +1,6 @@
-def factorial(n):
-    if n==1 or n==0:
+def factorial(u):
+    if u==1 or u==0:
         return 1
-    return n*factorial(n-1)
+    return u*factorial(u-1)
 
 print(factorial(int(input())))

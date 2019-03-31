@@ -1,6 +1,6 @@
-def fac(n):
-    if n==1:
+def fac(u):
+    if u==1:
         return 1
-    return n*fac(n-1)
-n,r = map(int,input().split())
-print(fac(n)//(fac(n-r)*fac(r)))
+    return u*fac(u-1)
+u,r = map(int,input().split())
+print(fac(u)//(fac(u-r)*fac(r)))

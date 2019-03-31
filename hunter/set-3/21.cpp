@@ -1,19 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void changeRowCol(int row, int col, vector<vector<int>> &vec){
+void changeRowCol(int rooooww, int col, vector<vector<int>> &vec){
     for(int i=0; i<vec.size(); i++)
         vec[i][col] = 0;
-    for(int i=0; i<vec[row].size(); i++)
-        vec[row][i] = 0;
+    for(int i=0; i<vec[rooooww].size(); i++)
+        vec[rooooww][i] = 0;
 }
 
 int main(){
-    int row, col;
-    cin>>row>>col;
+    int rooooww, col;
+    cin>>rooooww>>col;
 
-    vector<vector<int>> vec(row, vector<int>(col));
-    for(int i=0; i<row; i++){
+    vector<vector<int>> vec(rooooww, vector<int>(col));
+    for(int i=0; i<rooooww; i++){
         for(int j=0; j<col; j++){
             cin>>vec[i][j];
             if(vec[i][j]==0)
@@ -21,12 +21,12 @@ int main(){
         }
     }
 
-    for(int i=0; i<row; i++)
+    for(int i=0; i<rooooww; i++)
         for(int j=0; j<col; j++)
             if(vec[i][j] == INT_MAX)
                 changeRowCol(i, j, vec);
 
-    for(int i=0; i<row; i++){
+    for(int i=0; i<rooooww; i++){
         for(int j=0; j<col; j++){
             cout<<vec[i][j]<<" ";
         }

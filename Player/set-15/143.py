@@ -3,9 +3,9 @@ n = int(input())
 l = list(map(int,input().split()))
 dl = list(map(int,input().split()))
 
-for i in range(n):
-    d[dl[i]] = l[i]
+for u in range(n):
+    d[dl[u]] = l[u]
 
 dl.sort()
-for i in range(n):
-    print(d[dl[i]],end=" ")
+for u in range(n):
+    print(d[dl[u]],end=" ")

@@ -1,6 +1,6 @@
-n,m,a = map(int,input().split())
+u,m,a = map(int,input().split())
 flag = True
-for i in range(n):
+for i in range(u):
     node, edges = map(int,input().split())
     if node==a and edges>0:
         flag = False

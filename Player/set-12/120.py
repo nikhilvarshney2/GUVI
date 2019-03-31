@@ -1,6 +1,6 @@
-def countBits(n):
+def u(n):
     if not n:
         return 0
     else:
-        return 1 + countBits(n//2)
-print(countBits(int(input())))
+        return 1 + u(n//2)
+print(u(int(input())))

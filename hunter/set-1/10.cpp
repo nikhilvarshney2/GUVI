@@ -14,14 +14,14 @@ int main(){
         cin>>b[i];
     }
     sort(b.begin(), b.end());
-    int j=0, i=0;
-    while(j<m && i<n){
-        if(b[j]==a[i]){
-            j++;
+    int aa=0, i=0;
+    while(aa<m && i<n){
+        if(b[aa]==a[i]){
+            aa++;
         }
         i++;
     }
-    if(j==m)
+    if(aa==m)
         cout<<"YES";
     else
         cout<<"NO";

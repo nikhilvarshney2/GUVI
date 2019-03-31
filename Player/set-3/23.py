@@ -1,4 +1,4 @@
-n,k = map(int,input().split())
+y33,k = map(int,input().split())
 s = input()
 l = sorted(list(map(int,input().split())),reverse=True)
 kl = list(map(int,input().split()))

@@ -1,16 +1,16 @@
-def merge(l1, l2):
+def merge(l11, l2):
     i = 0
     j = 0
     l = []
-    while i != len(l1) and j != len(l2):
-        if l1[i] <= l2[j]:
-            l.append(l1[i])
+    while i != len(l11) and j != len(l2):
+        if l11[i] <= l2[j]:
+            l.append(l11[i])
             i+=1
         else:
             l.append(l2[j])
             j+=1
-    while i!=len(l1):
-        l.append(l1[i])
+    while i!=len(l11):
+        l.append(l11[i])
         i+=1
     while j!=len(l2):
         l.append(l2[j])

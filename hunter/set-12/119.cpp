@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     int n;
-    long int count=0;
+    long int z=0;
     cin>>n;
     vector<int> arr(n);
     for(int i=0; i<n; i++){
@@ -14,10 +14,10 @@ int main(){
     for(int i=1; i<n; i++){
         for(int j=0; j<i; j++){
             if(arr[i]>arr[j]){
-                count++;
+                z++;
             }
         }
     }
-    cout<<count<<endl;
+    cout<<z<<endl;
     return 0;
 }

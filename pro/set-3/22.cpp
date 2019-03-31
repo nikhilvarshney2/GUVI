@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int maxSumWithoutNeighbours(vector<int> vec){
+int maxsumsWithoutNeighbours(vector<int> vec){
     int include = vec[0];
     int exclude = 0;
     int temp_exclude = 0;
@@ -19,6 +19,6 @@ int main(){
     vector<int> vec(n);
     for(int i=0; i<n; i++)
         cin>>vec[i];
-    cout<<maxSumWithoutNeighbours(vec);
+    cout<<maxsumsWithoutNeighbours(vec);
     return 0;
 }

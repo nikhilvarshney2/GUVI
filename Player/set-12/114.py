@@ -1,2 +1,2 @@
-a,b,c = map(int,input().split())
-print(a**b%c)
+u,b,c = map(int,input().split())
+print(u**b%c)

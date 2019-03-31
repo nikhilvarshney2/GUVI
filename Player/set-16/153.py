@@ -1,2 +1,2 @@
-s,k = input().split()
-print(s[::int(k)])
+u,k = input().split()
+print(u[::int(k)])

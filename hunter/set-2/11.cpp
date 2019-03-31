@@ -2,13 +2,13 @@
 using namespace std;
 
 int main(){
-    string str;
-    getline(cin, str);
-    istringstream s(str);
+    string str1;
+    getline(cin, str1);
+    istringstream s(str1);
     vector<string> st;
     do{
-        s>>str;
-        st.push_back(str);
+        s>>str1;
+        st.push_back(str1);
     }while(s);
     for(int i=0; i<st.size()-1; i++){
         reverse(st[i].begin(), st[i].end());

@@ -6,7 +6,7 @@ using namespace std;
 
 string LCS(string A, string B){
     int n=A.size(), m=B.size();
-    int continuous[n+1][m+1] = {0}, lmax = 0, pos;
+    int continuous[n+1][m+1] = {0}, z = 0, pos;
     string return_str = "";
     for(int i=1; i<=n; i++){
         for(int j=1; j<=m; j++){
@@ -15,8 +15,8 @@ string LCS(string A, string B){
             }else{
                 continuous[i][j] = max(continuous[i-1][j], continuous[i][j-1]);
             }
-            if(lmax<continuous[i][j]){
-                lmax = continuous[i][j];
+            if(z<continuous[i][j]){
+                z = continuous[i][j];
                 pos = i;
             }
         }

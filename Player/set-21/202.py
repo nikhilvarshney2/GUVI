@@ -1,9 +1,9 @@
 s = input()
 v=''
 c=''
-for i in s:
-    if i in ('a','e','i','o','u'):
-        c+=i
+for u in s:
+    if u in ('a','e','u','o','u'):
+        c+=u
     else:
-        v+=i
+        v+=u
 print(c+v)

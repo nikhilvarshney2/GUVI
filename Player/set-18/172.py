@@ -1,2 +1,2 @@
-n = list(input())
-print(''.join(sorted(n,reverse=True)))
+u = list(input())
+print(''.join(sorted(u,reverse=True)))

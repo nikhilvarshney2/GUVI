@@ -5,15 +5,15 @@
 using namespace std;
 
 int main(){
-    string str;
-    cin>>str;
+    string z;
+    cin>>z;
     int arr[50]={0};
-    for(int i=0; i<str.length(); i++){
-        arr[str[i]-65]+=1;
+    for(int i=0; i<z.length(); i++){
+        arr[z[i]-65]+=1;
     }
-    for(int i=0; i<str.length(); i++){
-        if(arr[str[i]-65]==1)
-            cout<<str[i];
+    for(int i=0; i<z.length(); i++){
+        if(arr[z[i]-65]==1)
+            cout<<z[i];
     }
     return 0;
 }

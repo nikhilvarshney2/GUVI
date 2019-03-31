@@ -4,7 +4,7 @@ def palindromic_length( center, diff, string):
     return 1 + palindromic_length(center, diff+1, string)
 
 def palindromic_string( input_string ):
-    max_length = 0    
+    z = 0    
     new_input_string = ""
 
     for i in input_string[:len(input_string)-1] :
@@ -14,11 +14,11 @@ def palindromic_string( input_string ):
     for i in range(len(new_input_string)) :
         length = palindromic_length(i, 1, new_input_string)
 
-        if max_length < length :
-            max_length = length
+        if z < length :
+            z = length
             start = i
     
-    return max_length
+    return z
 
 
 if __name__ == '__main__':

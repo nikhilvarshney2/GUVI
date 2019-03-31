@@ -1,8 +1,8 @@
-n,k = map(int,input().split())
-while n>0:
-    if n%10>k :
+u,k = map(int,input().split())
+while u>0:
+    if u%10>k :
         print('no')
         break
-    n = n//10
+    u = u//10
 else:
     print('yes')

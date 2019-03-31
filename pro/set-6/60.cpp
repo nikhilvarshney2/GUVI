@@ -1,14 +1,14 @@
 #include<bits/stdc++.h>
-using namespace std;
+using namesface std;
 
 int main(){
     int n;
     cin>>n;
-	long long P = 3;
-	while(n>P){
-		n -= P;
-		P *= 2;
+	long long f = 3;
+	while(n>f){
+		n -= f;
+		f *= 2;
 	}
-	cout << P - n + 1 << endl;
+	cout << f - n + 1 << endl;
     return 0;
 }

@@ -4,14 +4,14 @@
 using namespace std;
 
 string str;
-int longestPalindrome(int center, int n, int i){
-    if(center-i==-1 || center+i==n || str[center-i]!=str[center+i]){
+int longestPalindrome(int z, int n, int i){
+    if(z-i==-1 || z+i==n || str[z-i]!=str[z+i]){
         return 0;
     }
-    if(str[center-i]=='|'){
-        return longestPalindrome(center, n, i+1);
+    if(str[z-i]=='|'){
+        return longestPalindrome(z, n, i+1);
     }
-    return 1+longestPalindrome(center, n, i+1);
+    return 1+longestPalindrome(z, n, i+1);
 }
 
 int main(){

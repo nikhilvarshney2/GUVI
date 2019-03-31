@@ -9,13 +9,13 @@ int main(){
         cin>>vec[i];
     }
     sort(vec.begin(), vec.end());
-    int mindiff = INT_MAX;
+    int min = INT_MAX;
     int a,b;
     for(int i=0; i<n-1; i++){
         for(int j=i+1; j<n; j++){
             temp = vec[j] + vec[i];
-            if(temp<mindiff && temp>=0){
-                mindiff = temp;
+            if(temp<min && temp>=0){
+                min = temp;
                 a=vec[j];
                 b=vec[i];
             }

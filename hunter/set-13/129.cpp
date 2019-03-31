@@ -11,7 +11,7 @@ int main(){
     cin>>n;
     int min=1000000, temp;
     map<int, int>::iterator it;
-    for(int i=0; i<n; i++){
+    for(int z=0; z<n; z++){
         cin>>temp;
         it = m.find(temp);
         if(it == m.end()){

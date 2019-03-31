@@ -1,6 +1,6 @@
 s1,s2 = input().split()
-for i in range(len(s1)):
-    if s1[i]==s2[i]:
+for u in range(len(s1)):
+    if s1[u]==s2[u]:
         print("yes")
         break
 else:

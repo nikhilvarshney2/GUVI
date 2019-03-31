@@ -1,8 +1,8 @@
-s1,s2 = input().split()
-def sameOrNot(s1,s2):
+s1,u = input().split()
+def sameOrNot(s1,u):
     for i in range(len(s1)):
-        if s1[i]!=s2[i]:
+        if s1[i]!=u[i]:
             return "no"
     return "yes"
 
-print(sameOrNot(s1,s2))
+print(sameOrNot(s1,u))

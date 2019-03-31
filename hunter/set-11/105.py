@@ -1,12 +1,12 @@
-def digitCount(n):
-    if n<=9:
+def digitCount(z):
+    if z<=9:
         return 1
-    return 1 + digitCount(n//10)
+    return 1 + digitCount(z//10)
 
-def posMul(n, power):
-    if n <= 9:
-        return n**power
-    return (n%10)**power + posMul(n//10, power)
+def posMul(z, power):
+    if z <= 9:
+        return z**power
+    return (z%10)**power + posMul(z//10, power)
 
-n = int(input())
-print(posMul(n, digitCount(n)))
+z = int(input())
+print(posMul(z, digitCount(z)))

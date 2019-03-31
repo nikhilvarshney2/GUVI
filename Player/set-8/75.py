@@ -1,3 +1,3 @@
-n = int(input())
+u = int(input())
 l = map(int,input().split())
-print(n*(n-1)//2)
+print(u*(u-1)//2)

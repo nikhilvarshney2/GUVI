@@ -1,18 +1,18 @@
 import functools
-def value(r):
-    if (r == 'I'): 
+def value(z):
+    if (z == 'I'): 
         return 1
-    if (r == 'V'): 
+    if (z == 'V'): 
         return 5
-    if (r == 'X'): 
+    if (z == 'X'): 
         return 10
-    if (r == 'L'): 
+    if (z == 'L'): 
         return 50
-    if (r == 'C'): 
+    if (z == 'C'): 
         return 100
-    if (r == 'D'): 
+    if (z == 'D'): 
         return 500
-    if (r == 'M'): 
+    if (z == 'M'): 
         return 1000
 
 def romanToInt(x,y):

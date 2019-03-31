@@ -1,6 +1,6 @@
-def isAnagram(str1, str2=['a', 'a', 'b', 'i', 'k', 'l']):
-    for i in range(len(str1)):
-        if str1[i] != str2[i]:
+def isAnagram(str1, str2=['a', 'a', 'b', 'z', 'k', 'l']):
+    for z in range(len(str1)):
+        if str1[z] != str2[z]:
             return 0
     return 1
 

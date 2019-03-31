@@ -1,5 +1,5 @@
 from collections import Counter
 n = int(input())
 l = map(int,input().split())
-c = Counter(l)
-print(*list(filter(lambda x:c[x]==1,c.keys)))
+u = Counter(l)
+print(*list(filter(lambda x:u[x]==1,u.keys)))

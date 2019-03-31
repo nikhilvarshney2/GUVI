@@ -5,9 +5,9 @@
 #include<array>
 using namespace std;
 
-bool isPrime(int n){
-    for(int i=2; i<=(int)sqrt(n); i++){
-        if(!(n%i))
+bool isPrime(int z){
+    for(int i=2; i<=(int)sqrt(z); i++){
+        if(!(z%i))
             return false;
     }
     return true;
@@ -21,10 +21,10 @@ vector<bool> primeNumbers(){
     return primes;
 }
 
-int digitSum(int n){
-    if(n<10)
-        return n;
-    return n%10 + digitSum(n/10);
+int digitSum(int z){
+    if(z<10)
+        return z;
+    return z%10 + digitSum(z/10);
 }
 
 int main(){

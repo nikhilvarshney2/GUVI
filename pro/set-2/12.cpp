@@ -34,8 +34,8 @@ public:
 };
 
 int main(){
-	int n, queries, l, r;
-	cin>>n>>queries;
+	int n, query, l, r;
+	cin>>n>>query;
 
 	vector<int> vec(n);
 	for(int i=0; i<n; i++)
@@ -43,7 +43,7 @@ int main(){
 
 	SegmentTree tree;
 	tree.buildTree(vec);
-	for(int i=0; i<queries; i++){
+	for(int i=0; i<query; i++){
         cin>>l>>r;
         l--;
         cout<<tree.sum(l,r)<<endl;

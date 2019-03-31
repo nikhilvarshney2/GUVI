@@ -2,11 +2,11 @@
 using namespace std;
 
 long int getProduct(vector<long int> vec){
-    long int product = 1;
+    long int product1 = 1;
     for(int i=0; i<vec.size(); i++){
-        product *= vec[i];
+        product1 *= vec[i];
     }
-    return product;
+    return product1;
 }
 
 int main(){
@@ -20,10 +20,10 @@ int main(){
             vec[i]=1;
     }
 
-    long int product = getProduct(vec);
+    long int product1 = getProduct(vec);
 
     for(int i=0; i<n; i++)
-        cout<<(long int)product/vec[i]<<" ";
+        cout<<(long int)product1/vec[i]<<" ";
 
     return 0;
 }

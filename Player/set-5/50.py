@@ -1,7 +1,7 @@
 import math
-def isPrimeNot(n):
-    for i in range(2,int(math.sqrt(n))+1):
-        if not n%i:
+def isPrimeNot(u):
+    for i in range(2,int(math.sqrt(u))+1):
+        if not u%i:
             return "yes"
     return "no"
 

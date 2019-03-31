@@ -7,13 +7,13 @@
 using namespace std;
 
 int main(){
-    int n, temp;
+    int n, temps;
     cin>>n;
     map<int,int> m;
     for(int i=0; i<n; i++){
-        cin>>temp;
-        if(m.find(temp) == m.end())
-            m.insert(make_pair(temp, 1));
+        cin>>temps;
+        if(m.find(temps) == m.end())
+            m.insert(make_pair(temps, 1));
         else{
             m.clear();
             break;
@@ -22,7 +22,7 @@ int main(){
     if(m.size()!=0){
         cout<<"unique";
     }else{
-        cout<<temp;
+        cout<<temps;
     }
     return 0;
 }

@@ -4,9 +4,9 @@ for _ in range(n):
     l.append(set(list(input())))
 
 flag = True
-for i in range(n-k):
+for u in range(n-k):
     s = set()
-    for j in range(i,k):
+    for j in range(u,k):
         sl = len(s)
         s.union(l[j])
         if sl+len(l[j])!=len(s):

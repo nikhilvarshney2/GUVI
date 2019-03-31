@@ -1,4 +1,4 @@
-s = input()
+u = input()
 import re
-s = re.sub("[\s]*","",s)
-print(s)
+u = re.sub("[\s]*","",u)
+print(u)

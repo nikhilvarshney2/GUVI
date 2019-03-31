@@ -1,5 +1,5 @@
-s1,s2 = input().split()
-if s1>s2:
-    print(s1[:len(s2)] + s2)
+u,s2 = input().split()
+if u>s2:
+    print(u[:len(s2)] + s2)
 else:
-    print(s1 + s2[:len(s1)])
+    print(u + s2[:len(u)])

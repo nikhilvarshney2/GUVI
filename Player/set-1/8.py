@@ -1,1 +1,1 @@
-print(" ".join(list(map(lambda x: x.title(),input().split()))))
+print(" ".join(list(map(lambda z: z.title(),input().split()))))

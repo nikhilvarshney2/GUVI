@@ -1,9 +1,9 @@
-a1,b1 = input().split()
-if a1==b1:
+u,b1 = input().split()
+if u==b1:
     print('D')
-elif a1=='R' and b1=='S':
+elif u=='R' and b1=='S':
     print('R')
-elif a1=='R' and b1=='P':
+elif u=='R' and b1=='P':
     print('P')
 else:
     print('S')

@@ -1,2 +1,2 @@
-l,b = map(int, input().split())
-print((l*b)//2);
+l,u = map(int, input().split())
+print((l*u)//2);

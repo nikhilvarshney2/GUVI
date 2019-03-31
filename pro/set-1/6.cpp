@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int n, count_triplet = 0;
+    int n, count = 0;
     cin>>n;
     vector<int> vec(n);
     for(int i=0; i<n; i++){
@@ -14,12 +14,12 @@ int main(){
             if(vec[i] < vec[j]){
                 for(int k=j+1; k<n; k++){
                     if(vec[j] < vec[k]){
-                        count_triplet++;
+                        count++;
                     }
                 }
             }
         }
     }
-    cout<<count_triplet;
+    cout<<count;
     return 0;
 }

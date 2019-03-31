@@ -2,13 +2,13 @@ s = input()
 from collections import Counter
 
 c = Counter(s)
-count = 0
+u = 0
 for k,v in c.items():
     if k not in ['a','b']:
-        count+=v
-    if count>1:
+        u+=v
+    if u>1:
         break
-if count>1:
+if u>1:
     print("no")
 else:
     print("yes")

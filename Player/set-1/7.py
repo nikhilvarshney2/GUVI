@@ -1,5 +1,5 @@
-s = list(input())
-for i in range(0,len(s),2):
-    s[i],s[i+1] = s[i+1],s[i]
+z = list(input())
+for i in range(0,len(z),2):
+    z[i],z[i+1] = z[i+1],z[i]
 
-print("".join(s))
+print("".join(z))

@@ -3,8 +3,8 @@ l = list(map(int,input().split()))
 
 max = l[0]
 
-for i in l[1:]:
-    if max>i:
+for u in l[1:]:
+    if max>u:
         break
-    max = i
+    max = u
 print(max)

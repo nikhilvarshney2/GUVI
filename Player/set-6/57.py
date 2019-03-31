@@ -1,9 +1,9 @@
-def countOccurance(s,k):
+def countOccurance(s,u):
     count = 0
     for i in range(len(s)):
-        if s[i]==k:
+        if s[i]==u:
             count+=1
     return count
 
-s,k = input().split()
-print(countOccurance(s,k))
+s,u = input().split()
+print(countOccurance(s,u))

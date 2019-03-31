@@ -1,9 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool isPrime(int n){
-    for(int i=2; i<sqrt(n); i++){
-        if(n%i==0){
+bool isPrime(int z){
+    for(int i=2; i<sqrt(z); i++){
+        if(z%i==0){
             return false;
         }
     }
@@ -11,17 +11,17 @@ bool isPrime(int n){
 }
 
 int main(){
-    int n;
-    cin>>n;
+    int z;
+    cin>>z;
     int arr[3];
 
-    if(n&1){ arr[0] = 2; n -= 2;
-    }else{ arr[0] = 3; n -= 3; }
+    if(z&1){ arr[0] = 2; z -= 2;
+    }else{ arr[0] = 3; z -= 3; }
 
-    for(int i=2; i<n-1; i++){
-        if(isPrime(i) && isPrime(n-i)){
+    for(int i=2; i<z-1; i++){
+        if(isPrime(i) && isPrime(z-i)){
             arr[1] = i;
-            arr[2] = n-i;
+            arr[2] = z-i;
             break;
         }
     }

@@ -1,8 +1,8 @@
-n = int(input())
+u = int(input())
 l = []
-while n>0:
-    x = n%10
-    n = n//10
+while u>0:
+    x = u%10
+    u = u//10
     if x not in l:
         l.append(x)
     else:

@@ -4,10 +4,10 @@
 #include<string>
 using namespace std;
 
-string prepend(string s, int m){
+string prepend(string z, int m){
     string str = "";
-    str += s;
-    for(int i=1; i<=m-s.size(); i++){
+    str += z;
+    for(int i=1; i<=m-z.size(); i++){
         str += to_string(i);
     }
     cout<<str<<endl;

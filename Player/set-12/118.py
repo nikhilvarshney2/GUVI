@@ -1,6 +1,6 @@
-l = list(input().split())
-min = l[0]
-for x in l[1:]:
+u = list(input().split())
+min = u[0]
+for x in u[1:]:
     if min < x:
         x = min
 

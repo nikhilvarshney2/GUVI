@@ -1,6 +1,6 @@
-n = input()
+u = input()
 try:
-    if(int(n,16)):
+    if(int(u,16)):
         print("yes")
 except:
     print("no")

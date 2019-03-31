@@ -1,7 +1,7 @@
 from collections import Counter
 c = Counter(input())
-m = max(c.values())
-print(m,end=" ")
+u = max(c.values())
+print(u,end=" ")
 for k,v in c.items():
-    if v==m:
+    if v==u:
         print(k,end="")

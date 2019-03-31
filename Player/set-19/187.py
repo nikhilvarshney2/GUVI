@@ -1,14 +1,14 @@
-def coPrimes(a,b):
-    if a%b==0 and b!=1:
+def coPrimes(u,b):
+    if u%b==0 and b!=1:
         return False
     else:
-        if a==1 or b==1:
+        if u==1 or b==1:
             return True
         else:
-            return coPrimes(b,a%b)
+            return coPrimes(b,u%b)
 
-a,b = input().split()
-if coPrimes(len(a),len(b)):
+u,b = input().split()
+if coPrimes(len(u),len(b)):
     print("yes")
 else:
     print("no")

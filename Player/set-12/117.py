@@ -1,2 +1,2 @@
-l = list(input())
-print("-".join(l[::-1]))
+u = list(input())
+print("-".join(u[::-1]))

@@ -14,8 +14,8 @@ public:
 		for (int i=n-1; i>0; --i)
 			tree[i] = min(tree[i<<1], tree[i<<1 | 1]);
 	}
-	void updateTreeNode(int p, int value) {
-		tree[p+n] = value;
+	void updateTreeNode(int p, int values) {
+		tree[p+n] = values;
 		p = p+n;
 		for (int i=p; i>1; i>>=1)
 			tree[i>>1] = min(tree[i], tree[i^1]);

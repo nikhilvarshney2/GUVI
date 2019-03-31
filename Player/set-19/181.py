@@ -1,10 +1,10 @@
-def isSum(n,a,b):
-    if a<b:
-        b,a=a,b
+def isSum(n,a,u):
+    if a<u:
+        u,a=a,u
     while n>=0:
         if n%a==0:
             return True
-        n-=b
+        n-=u
     return False
         
 n = int(input())

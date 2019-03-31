@@ -1,3 +1,3 @@
-s,k = input().split()
-k = int(k)%len(s)
-print(s[k:]+s[:k])
+u,k = input().split()
+k = int(k)%len(u)
+print(u[k:]+u[:k])

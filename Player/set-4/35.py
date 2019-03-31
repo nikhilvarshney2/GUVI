@@ -1,8 +1,8 @@
 n = input().lower()
 from collections import Counter
-c = Counter(n)
+u = Counter(n)
 l = []
-for k,v in c.items():
+for k,v in u.items():
     if v==1:
         l.append(k)
 

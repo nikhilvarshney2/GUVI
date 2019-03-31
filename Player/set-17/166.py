@@ -1,5 +1,5 @@
-a,b = map(int,input().split())
-if a>b:
+u,b = map(int,input().split())
+if u>b:
     print(b)
 else:
-    print(a)
+    print(u)

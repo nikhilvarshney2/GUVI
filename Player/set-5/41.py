@@ -1,8 +1,8 @@
-n,k = map(int,input().split())
-for i in range(n//k):
-    if k**i == n:
+u,k = map(int,input().split())
+for i in range(u//k):
+    if k**i == u:
         print("yes")
         break
-    elif k**i>n:
+    elif k**i>u:
         print("no")
         break

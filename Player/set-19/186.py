@@ -1,6 +1,6 @@
 import re
-s = input()
-if re.search('Vishal',s) and re.search('Sundar',s):
+u = input()
+if re.search('Vishal',u) and re.search('Sundar',u):
     print("yes")
 else:
     print("no")

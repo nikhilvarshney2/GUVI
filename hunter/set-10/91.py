@@ -1,6 +1,6 @@
-s = input()
+s1 = input()
 
-if len(s)>1 and len(set(s))==1:
+if len(s1)>1 and len(set(s1))==1:
     print("no")
 else:
     print("yes")

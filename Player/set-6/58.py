@@ -1,8 +1,8 @@
-def countOccurance(s,k):
+def countOccurance(s,u):
     print(s)
     count = 0
     for i in s:
-        if i==k:
+        if i==u:
             count+=1
     return count
 

@@ -1,16 +1,16 @@
 from math import sqrt
 
-def isPrime(n):
-    if not n%2:
+def isPrime(z):
+    if not z%2:
         return False
-    for i in range(2, int(sqrt(n))+1):
-        if not n%i:
+    for i in range(2, int(sqrt(z))+1):
+        if not z%i:
             return False
     return True
 
-n = int(input())
-for i in range(2, n-2):
-    if isPrime(i) and isPrime(n-i):
-        print(i,n-i)
+z = int(input())
+for i in range(2, z-2):
+    if isPrime(i) and isPrime(z-i):
+        print(i,z-i)
         break
     

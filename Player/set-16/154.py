@@ -1,9 +1,9 @@
-s,k = input().split()
+u,k = input().split()
 k = int(k)
 newS = ''
-for i in range(len(s)):
+for i in range(len(u)):
     if not (i+1)%k:
-        newS += s[i].upper()
+        newS += u[i].upper()
     else:
-        newS += s[i]
+        newS += u[i]
 print(newS)

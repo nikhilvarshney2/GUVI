@@ -1,8 +1,8 @@
-def isPerfectSquare(n):
-    x = n//2
+def isPerfectSquare(u):
+    x = u//2
     l = [x]
-    while x*x!=n:
-        x=(x+n//x)//2
+    while x*x!=u:
+        x=(x+u//x)//2
         if x in l:
             return False
         l.append(x)

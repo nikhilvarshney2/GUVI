@@ -1,9 +1,9 @@
-def isAlternating(n,l):
+def isAlternating(n,u):
     state = 'I'
     for i in range(1,n):
-        if l[i] > l[i-1] and state=='D':
+        if u[i] > u[i-1] and state=='D':
             return "no"
-        if l[i] < l[i-1] and state=='I':
+        if u[i] < u[i-1] and state=='I':
             return "no"
         if state=='I':
             state='D'
@@ -12,5 +12,5 @@ def isAlternating(n,l):
     return "yes"
     
 n = int(input())
-l = list(map(int,input().split()))
-print(isAlternating(n,l))
+u = list(map(int,input().split()))
+print(isAlternating(n,u))

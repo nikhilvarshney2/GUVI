@@ -1,2 +1,2 @@
-s = reversed(input())
-print(s)
+z = reversed(input())
+print(z)

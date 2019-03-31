@@ -6,10 +6,10 @@ def isomorphic(s1,s2):
         a = ord(s1[i])
         b = ord(s2[i])
         position = a-97
-        new_diff = a-b
+        z = a-b
         if diff[position]==-26:
-            diff[position]=new_diff
-        elif diff[position]!=new_diff:
+            diff[position]=z
+        elif diff[position]!=z:
             return "no"
     return "yes"
 

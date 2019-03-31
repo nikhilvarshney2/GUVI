@@ -1,5 +1,5 @@
-n = int(input())
-if n&(n-1):
+u = int(input())
+if u&(u-1):
     print('no')
 else:
     print('yes')

@@ -2,13 +2,13 @@
 using namespace std;
 
 int main(){
-    int n;
-    cin>>n;
-    int vec[n];
-    for(int i=0; i<n; i++){
+    int x;
+    cin>>x;
+    int vec[x];
+    for(int i=0; i<x; i++){
         cin>>vec[i];
     }
-    for(int i=n-1; i>0; i--){
+    for(int i=x-1; i>0; i--){
         cout<<vec[i]<<"->";
     }
     cout<<vec[0];

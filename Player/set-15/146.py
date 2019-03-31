@@ -1,7 +1,7 @@
-def factb(a,b):
-    if a<=b:
+def factb(u,b):
+    if u<=b:
         return 1
-    return a*(factb(a-1,b))
+    return u*(factb(u-1,b))
             
-a,b = map(int,input().split())
-print(factb(a,b))
+u,b = map(int,input().split())
+print(factb(u,b))

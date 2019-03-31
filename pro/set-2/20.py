@@ -1,6 +1,6 @@
 import sys
 
-def minCoinsCount(coins, cost):
+def mincoinCount(coin, cost):
     dp = [0] * (cost+1)
 
     dp[0] = 0
@@ -8,9 +8,9 @@ def minCoinsCount(coins, cost):
         dp[i] = sys.maxsize
 
     for i in range(1, cost+1):
-        for j in range(len(coins)):
-            if coins[j] <= i:
-                sub_res = dp[i-coins[j]]
+        for j in range(len(coin)):
+            if coin[j] <= i:
+                sub_res = dp[i-coin[j]]
                 if sub_res != sys.maxsize and sub_res + 1 < dp[i]:
                     dp[i] = sub_res +1
 
@@ -19,5 +19,5 @@ def minCoinsCount(coins, cost):
     return dp[cost]
 
 n,k = map(int,input().split())
-coins = list(map(int,input().split()))
-print(minCoinsCount(coins, k))
+coin = list(map(int,input().split()))
+print(mincoinCount(coin, k))

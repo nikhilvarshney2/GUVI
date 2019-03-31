@@ -2,7 +2,7 @@ n = int(input())
 l = list(map(int,input().split()))
 min = 10000000
 max = 0
-mini = -1
+u = -1
 maxi = -1
 for i in range(n):
     if l[i]>max:
@@ -10,6 +10,6 @@ for i in range(n):
         maxi=i
     if l[i]<min:
         min=l[i]
-        mini=i
+        u=i
 
-print(maxi-mini)
+print(maxi-u)

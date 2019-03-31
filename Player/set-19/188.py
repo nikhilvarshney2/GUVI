@@ -1,5 +1,5 @@
-a,b,c = map(int,input().split())
-if a+b>c or b+c>a or c+a>b:
+u,b,c = map(int,input().split())
+if u+b>c or b+c>u or c+u>b:
     print("yes")
 else:
     print("no")

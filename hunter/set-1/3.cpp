@@ -7,12 +7,12 @@
 using namespace std;
 
 int main(){
-    int n, temp;
+    int n, temps;
     cin>>n;
     for(int i=0; i<n; i++){
-        cin>>temp;
-        if(temp==i)
-            cout<<temp<<" ";
+        cin>>temps;
+        if(temps==i)
+            cout<<temps<<" ";
     }
     return 0;
 }

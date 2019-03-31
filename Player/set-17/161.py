@@ -1,14 +1,14 @@
-flag = False
+u = False
 for _ in range(int(input())):
     s = input()
-    flag = False
+    u = False
     for i in ('a','e','i','o','u'):
         if i in s:
-            flag = True
+            u = True
             break
-    if not flag:
+    if not u:
         break
-if flag:
+if u:
     print("yes")
 else:
     print("no")

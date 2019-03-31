@@ -1,7 +1,7 @@
-def d2b(n):
-    if n==0 or n==1:
-        return str(n)
-    return str(n%2) + d2b(n//2)
+def d2b(u):
+    if u==0 or u==1:
+        return str(u)
+    return str(u%2) + d2b(u//2)
 b = d2b(int(input()))
 for i in range(len(b)):
     if b[i]=='1':

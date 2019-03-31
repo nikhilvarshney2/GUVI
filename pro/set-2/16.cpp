@@ -14,10 +14,10 @@ int main(){
             m.insert(make_pair(vec[i], 1));
     }
 
-    int candies = 1, sum = 0;
+    int candie = 1, sum = 0;
     for(map<int,int>::iterator it=m.begin(); it!=m.end(); it++){
-        sum += it->second * candies;
-        candies++;
+        sum += it->second * candie;
+        candie++;
     }
     cout<<sum;
     return 0;

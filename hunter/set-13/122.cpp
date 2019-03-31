@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-    int n,temp,sum=0,suffix_sum;
+    int n,temp,sum=0,z;
     bool flag=false;
     cin>>n;
     vector<int> v,prefix_sum;
@@ -15,8 +15,8 @@ int main(){
         prefix_sum.push_back(sum);
     }
     for(int i=1; i<n; i++){
-        suffix_sum=prefix_sum[n-1]-prefix_sum[i];
-        if(prefix_sum[i]+v[i]==suffix_sum){
+        z=prefix_sum[n-1]-prefix_sum[i];
+        if(prefix_sum[i]+v[i]==z){
             flag=true;
             break;
         }

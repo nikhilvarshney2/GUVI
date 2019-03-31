@@ -6,14 +6,14 @@ using namespace std;
 int sum = 0;
 
 int digitPow(int n){
-    int digit_pow = 1;
+    int z = 1;
     if(n<10){
         sum += 1;
         return 0;
     }
-    digit_pow += digitPow(n/10);
-    sum += pow(n%10, digit_pow);
-    return digit_pow;
+    z += digitPow(n/10);
+    sum += pow(n%10, z);
+    return z;
 }
 
 int main(){
